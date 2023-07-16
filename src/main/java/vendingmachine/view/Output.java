@@ -1,6 +1,5 @@
 package vendingmachine.view;
 
-import camp.nextstep.edu.missionutils.Console;
 import vendingmachine.util.ConsoleMessage;
 
 public class Output {
@@ -10,7 +9,6 @@ public class Output {
     }
 
     public void outputCash(String inputCash){
-        System.out.println(ConsoleMessage.INPUT_MONEY.getMessage());
         validateMoney(inputCash);
 
         System.out.println(inputCash);
@@ -18,10 +16,7 @@ public class Output {
     }
 
     public void outputMachineMoney(String machineMoney){
-        System.out.println(ConsoleMessage.INPUT_VENDINGMACHINE_MONEY.getMessage());
-
         validateMoney(machineMoney);
-
         System.out.println(machineMoney);
     }
 

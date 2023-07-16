@@ -9,6 +9,7 @@ import java.util.List;
 
 public class Input {
     public String inputMachineMoney() {
+        System.out.println(ConsoleMessage.INPUT_VENDINGMACHINE_MONEY.getMessage());
         String vendingMoney = Console.readLine();
         validateNumber(vendingMoney);
         return vendingMoney;
@@ -63,6 +64,7 @@ public class Input {
     }
 
     public String inputCash() {
+        System.out.println(ConsoleMessage.INPUT_MONEY.getMessage());
         return Console.readLine();
     }
 
