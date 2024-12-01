@@ -9,17 +9,17 @@ public class CoinDTO {
 
     private final Map<Integer, Integer> coinCount = new LinkedHashMap<>();
 
-    public CoinDTO(){
+    public CoinDTO() {
         makeCoin();
     }
 
-    private void makeCoin(){
-        for(Coin coin : Coin.values()){
+    private void makeCoin() {
+        for (Coin coin : Coin.values()) {
             coinCount.put(coin.getAmount(), coin.getCount());
         }
     }
 
-    public Map<Integer, Integer> getCoinCount(){
+    public Map<Integer, Integer> getCoinCount() {
         return coinCount;
     }
 }

@@ -1,6 +1,7 @@
 package vendingmachine.model;
 
-import static vendingmachine.util.ErrorMessage.*;
+import static vendingmachine.util.ErrorMessage.ERROR_MONEY_ONLY_NUMBER;
+import static vendingmachine.util.ErrorMessage.ERROR_NEGATIVE;
 
 public class CustomerMoney {
 
@@ -19,17 +20,17 @@ public class CustomerMoney {
         }
     }
 
-    private void validateNegative(){
-        if(customerMoney < 0){
+    private void validateNegative() {
+        if (customerMoney < 0) {
             throw new IllegalArgumentException(ERROR_NEGATIVE.getMessage());
         }
     }
 
-    public int getMoney(){
+    public int getMoney() {
         return customerMoney;
     }
 
-    public void minusMoney(int minus){
+    public void minusMoney(int minus) {
         customerMoney -= minus;
     }
 }

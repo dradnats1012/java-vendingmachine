@@ -9,7 +9,7 @@ import vendingmachine.model.dto.CoinDTO;
 
 public class OutputView {
 
-    public static void printCoin(CoinDTO coinDTO){
+    public static void printCoin(CoinDTO coinDTO) {
         System.out.println(VENDING_MACHINE_COIN.getMessage());
         for (Map.Entry<Integer, Integer> entry : coinDTO.getCoinCount().entrySet()) {
             System.out.printf(VENDING_MACHINE_COIN_COUNT.getMessage() + "\n", entry.getKey(), entry.getValue());
@@ -17,12 +17,12 @@ public class OutputView {
         System.out.println();
     }
 
-    public static void printRemainderMoney(int money){
+    public static void printRemainderMoney(int money) {
         System.out.println();
         System.out.printf(MONEY.getMessage() + "\n", money);
     }
 
-    public static void printChange(ChangeDTO changeDTO){
+    public static void printChange(ChangeDTO changeDTO) {
         System.out.println(CHANGE.getMessage());
         for (Map.Entry<Integer, Integer> entry : changeDTO.getChanges().entrySet()) {
             System.out.printf(VENDING_MACHINE_COIN_COUNT.getMessage() + "\n", entry.getKey(), entry.getValue());
@@ -30,7 +30,7 @@ public class OutputView {
         System.out.println();
     }
 
-    public static void printException(String message){
+    public static void printException(String message) {
         System.out.println(message);
     }
 }

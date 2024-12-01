@@ -8,16 +8,15 @@ public class ChangeDTO {
 
     private final Map<Integer, Integer> changes;
 
-
-    public ChangeDTO(Change change){
+    public ChangeDTO(Change change) {
         this.changes = change.getChanges();
     }
 
-    public static ChangeDTO from(Change change){
+    public static ChangeDTO from(Change change) {
         return new ChangeDTO(change);
     }
 
-    public Map<Integer, Integer> getChanges(){
+    public Map<Integer, Integer> getChanges() {
         return changes;
     }
 }

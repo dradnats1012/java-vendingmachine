@@ -9,9 +9,7 @@ public enum Message {
     INPUT_MONEY("투입 금액을 입력해 주세요."),
     PURCHASE_GOODS("구매할 상품명을 입력해 주세요."),
     MONEY("투입 금액: %d원"),
-    CHANGE("잔돈")
-
-    ;
+    CHANGE("잔돈");
 
     private final String message;
 
@@ -19,7 +17,7 @@ public enum Message {
         this.message = message;
     }
 
-    public String getMessage(){
+    public String getMessage() {
         return message;
     }
 }

@@ -48,7 +48,7 @@ public class VendingMachine {
         return goods.stream().allMatch(oneGoods -> oneGoods.getPrice() > customerMoney.getMoney());
     }
 
-    public int getMoney(){
+    public int getMoney() {
         return money.getMoney();
     }
 }
