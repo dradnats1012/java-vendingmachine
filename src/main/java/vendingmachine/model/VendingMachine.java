@@ -37,7 +37,7 @@ public class VendingMachine {
     }
 
     public boolean isEnd(CustomerMoney customerMoney) {
-        return isAllGoodsEmpty() || isChangeLessThanPrice(customerMoney);    // 모두 비었고, 모두 가격보다 적음(true일때 종료 조건)
+        return isAllGoodsEmpty() || isChangeLessThanPrice(customerMoney);
     }
 
     private boolean isAllGoodsEmpty() {
@@ -46,5 +46,9 @@ public class VendingMachine {
 
     private boolean isChangeLessThanPrice(CustomerMoney customerMoney) {
         return goods.stream().allMatch(oneGoods -> oneGoods.getPrice() > customerMoney.getMoney());
+    }
+
+    public int getMoney(){
+        return money.getMoney();
     }
 }
