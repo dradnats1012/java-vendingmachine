@@ -1,13 +1,13 @@
 package vendingmachine.model.dto;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import vendingmachine.Coin;
 
 public class CoinDTO {
 
-    private final Map<Integer, Integer> coinCount = new HashMap<>();
+    private final Map<Integer, Integer> coinCount = new LinkedHashMap<>();
 
     public CoinDTO(){
         makeCoin();
